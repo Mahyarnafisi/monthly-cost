@@ -12,8 +12,29 @@
   --color-primary-shade-2: ##8e99c1;
   --color-secondary: #a8eb12;
   --color-tertiary: #2cd261;
-  --color-black: #333333;
-  --color-white: #f1f5ff;
+  --color-text-black: #333333;
+  --color-text-white: #f1f5ff;
+  --color-white: #ffffff;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  --fs-s: 1.6rem;
+  --fs-m: 2rem;
+  --fs-l: 2.8rem;
+  --fs-xl: 3.8rem;
+
+  --mb-s: 1rem;
+  --mb-m: 2rem;
+  --mb-l: 4rem;
+
+  --mt-s: 1rem;
+  --mt-m: 2rem;
+  --mt-l: 4rem;
 }
 
 html {
