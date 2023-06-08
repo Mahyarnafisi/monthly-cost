@@ -6,21 +6,25 @@
   font-size: var(--fs-s);
   color: var(--color-text-black);
   font-weight: var(--fw-semibold);
-  border: 2.9px solid var(--color-tertiary);
+  border: 2.9px solid var(--color-secondary);
   border-radius: 2rem;
   align-items: center;
   background-color: var(--color-white);
   grid-gap: 1rem;
   box-shadow: 0.3rem 0.3rem 0.5rem #00000015;
-  overflow: hidden;
+}
+.expense-item:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .expense-item__date {
   border-right: 1px solid #999999;
   padding-right: 1rem;
+  font-weight: var(--fw-bold);
 }
 
 .expense-item__description {
+  padding: 1rem;
 }
 
 .expense-item__price {
