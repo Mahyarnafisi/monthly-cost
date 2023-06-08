@@ -1,0 +1,17 @@
+.expense-item__date {
+  border-right: 1px solid #999999;
+  padding-right: 1rem;
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+  color: var(--color-primary-shade-1);
+}
+
+.expense-item__date-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--color-primary-shade-1);
+}
