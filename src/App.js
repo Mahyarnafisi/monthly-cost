@@ -13,6 +13,7 @@ function App() {
   //
   return (
     <div className="App">
+      <h1 className="app__title">Monthly Cost </h1>
       <ExpenseItem />
     </div>
   );
