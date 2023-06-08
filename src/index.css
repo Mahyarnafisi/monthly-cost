@@ -7,6 +7,7 @@
 }
 
 :root {
+  /* Color System sheets */
   --color-primary: #051937;
   --color-primary-shade-1: #333f62;
   --color-primary-shade-2: ##8e99c1;
@@ -15,19 +16,19 @@
   --color-text-black: #333333;
   --color-text-white: #f1f5ff;
   --color-white: #ffffff;
-
+  /* Font weight Sheets*/
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
   --fw-extrabold: 800;
-
+  /* Font size sheets */
   --fs-s: 1.6rem;
   --fs-m: 2rem;
   --fs-l: 2.8rem;
   --fs-xl: 3.8rem;
-
+  /* margins sheets */
   --mb-s: 1rem;
   --mb-m: 2rem;
   --mb-l: 4rem;
