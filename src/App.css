@@ -1,2 +1,17 @@
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color-text-white);
+  width: 80vw;
+  max-width: 130rem;
+  min-width: 48rem;
+  height: min-content;
+  max-height: 75rem;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 5rem #00000025, -1rem -1rem 5rem #ffffff60;
+  border-top: 4px solid #ffffff99;
+  border-left: 4px solid #ffffff;
+  filter: brightness(110%);
 }
