@@ -2,19 +2,19 @@
 ::after,
 ::before {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 
 :root {
   /* Color System sheets */
   --color-primary: #051937;
   --color-primary-shade-1: #333f62;
-  --color-primary-shade-2: ##8e99c1;
+  --color-primary-shade-2: #8e99c1;
   --color-secondary: #a8eb12;
   --color-tertiary: #2cd261;
   --color-text-black: #333333;
-  --color-text-white: #f1f5ff;
+  --color-text-white: #d3e0ff;
   --color-white: #ffffff;
   /* Font weight Sheets*/
   --fw-light: 300;

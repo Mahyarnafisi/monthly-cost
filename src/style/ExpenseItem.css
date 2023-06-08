@@ -1,0 +1,30 @@
+.expense-item {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: max-content 1fr min-content;
+  font-size: var(--fs-s);
+  color: var(--color-text-black);
+  font-weight: var(--fw-semibold);
+  border: 2.9px solid var(--color-tertiary);
+  border-radius: 2rem;
+  align-items: center;
+  background-color: var(--color-white);
+  grid-gap: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem #00000015;
+  overflow: hidden;
+}
+
+.expense-item__date {
+  border-right: 1px solid #999999;
+  padding-right: 1rem;
+}
+
+.expense-item__description {
+}
+
+.expense-item__price {
+  font-size: var(--fs-m);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary-shade-1);
+}
