@@ -1,8 +1,8 @@
 .expense-item {
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1.5rem;
   display: grid;
-  grid-template-columns: max-content 1fr min-content;
+  grid-template-columns: 21rem 1fr min-content;
   font-size: var(--fs-s);
   color: var(--color-text-black);
   font-weight: var(--fw-semibold);
