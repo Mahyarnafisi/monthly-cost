@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
 function App() {
   // Dummy data list
@@ -13,8 +13,7 @@ function App() {
   //
   return (
     <div className="App">
-      <h1 className="app__title">Monthly Cost </h1>
-      <ExpenseItem />
+      <Expenses item={expense} />
     </div>
   );
 }

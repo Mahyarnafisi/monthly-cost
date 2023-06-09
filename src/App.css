@@ -8,20 +8,10 @@
   width: 80vw;
   max-width: 130rem;
   min-width: 48rem;
-  height: 30rem;
+  height: min-content;
   max-height: 75rem;
   border-radius: 2rem;
   box-shadow: 1rem 1rem 2rem #00000025, -1rem -1rem 2rem #ffffff30;
   filter: brightness(110%);
   position: relative;
-}
-.app__title {
-  color: var(--color-secondary-shade-1);
-  font-size: var(--fs-l);
-  font-weight: var(--fw-regular);
-  text-shadow: 0.2rem 0.2rem 1rem var(--color-white);
-  position: absolute;
-  top: -5rem;
-  left: 0;
-  line-height: 1;
 }
