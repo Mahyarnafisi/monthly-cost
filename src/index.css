@@ -10,13 +10,14 @@
   /* Color System sheets */
   --color-primary: #051937;
   --color-primary-shade-1: #333f62;
-  --color-primary-shade-2: #8e99c1;
+  --color-primary-shade-2: #97a2c9;
   --color-secondary: #2cd261;
   --color-secondary-shade-1: #a8eb12;
   --color-secondary-shade-2: #d3f589;
   --color-text-black: #333333;
   --color-text-white: #d3e0ff;
   --color-white: #ffffff;
+  --color-bg-black: #252525;
   /* Font weight Sheets*/
   --fw-light: 300;
   --fw-regular: 400;
@@ -41,7 +42,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   background-image: linear-gradient(22deg, #051937 0%, #004d7a 25%, #008793 50%, #00bf72 70%, #a8eb12 100%);
 }
 
@@ -52,4 +53,11 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+::-webkit- .hover-bright:hover {
+  filter: brightness(110%);
+}
+
+.hover-darker:hover {
+  filter: brightness(90%);
 }

@@ -1,13 +1,13 @@
 .expense-item {
   width: 100%;
-  padding: 1.5rem 1.5rem;
+  padding: 2rem 2rem;
   display: grid;
   grid-template-columns: 21rem 1fr min-content;
   font-size: var(--fs-s);
   color: var(--color-text-black);
   font-weight: var(--fw-semibold);
   border: 2.9px solid var(--color-secondary);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   align-items: center;
   background-color: var(--color-white);
   grid-gap: 1rem;
