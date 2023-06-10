@@ -10,12 +10,23 @@
   transition: all 0.2s ease-in-out;
 }
 
+.newexpenseform label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.label-icon {
+  font-size: var(--fs-m);
+  transform: rotate(90deg);
+}
 /* ---------------------------------- */
 .input--title {
-  color: var(--color-primary-shade-1);
+  color: var(--color-primary);
   font-size: var(--fs-l);
+  font-weight: var(--fw-light);
   flex: 1;
-  padding: 2rem 4rem;
+  padding: 2rem;
   background-color: var(--color-secondary);
   display: flex;
   align-items: flex-start;
@@ -30,21 +41,24 @@
   border: none;
   background-color: var(--color-secondary);
   border-bottom: 1px solid;
-  font-size: 2.4rem;
+  font-size: var(--fs-m);
+  font-weight: var(--fw-light);
   color: var(--color-primary-shade-1);
   outline: none;
 }
 
 .input--title input::placeholder {
   color: var(--color-primary-shade-1);
-  opacity: 20%;
+  opacity: 30%;
+  font-weight: var(--fw-light);
 }
 /* ------------------------------- */
 .input--amount {
   color: var(--color-text-white);
   font-size: var(--fs-l);
+  font-weight: var(--fw-light);
   flex: 1;
-  padding: 2rem 4rem;
+  padding: 2rem;
   background-color: var(--color-primary-shade-1);
   display: flex;
   align-items: flex-start;
@@ -60,25 +74,28 @@
   border: none;
   background-color: var(--color-primary-shade-1);
   border-bottom: 1px solid;
-  font-size: 2.4rem;
+  font-size: var(--fs-m);
+  font-weight: var(--fw-light);
   color: var(--color-text-white);
   outline: none;
 }
 
 .input--amount input::placeholder {
   color: var(--color-text-white);
-  opacity: 20%;
+  opacity: 30%;
+  font-weight: var(--fw-light);
 }
 /* ---------------------------------- */
 .input--date {
-  color: var(--color-text-white);
+  color: var(--color-primary);
   font-size: var(--fs-l);
+  font-weight: var(--fw-light);
   flex: 1;
-  padding: 2rem 4rem;
+  padding: 2rem;
   background-color: var(--color-primary-shade-2);
-  display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
+  flex-flow: wrap column;
   flex-flow: wrap column;
   border-radius: 1.5rem;
   transition: inherit;
@@ -89,10 +106,12 @@
   padding: 1rem;
   border: none;
   background-color: var(--color-primary-shade-2);
+  color: var(--color-primary);
   border-bottom: 1px solid;
-  font-size: var(--fs-l);
-  color: var(--color-text-white);
+  font-size: var(--fs-m);
+  font-weight: var(--fw-light);
   outline: none;
+  text-transform: uppercase;
 }
 
 .expenseform__submit {
@@ -103,9 +122,9 @@
   border: none;
   outline: none;
   justify-content: center;
-  font-size: 5.6rem;
+  font-size: 4.8rem;
   cursor: pointer;
-  border: 3px solid var(--color-primary-shade-2);
-  color: var(--color-primary-shade-2);
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
   transition: inherit;
 }

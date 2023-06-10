@@ -9,9 +9,9 @@
 :root {
   /* Color System sheets */
   --color-primary: #051937;
-  --color-primary-shade-1: #333f62;
-  --color-primary-shade-2: #97a2c9;
-  --color-secondary: #2cd261;
+  --color-primary-shade-1: #2e395c;
+  --color-primary-shade-2: #9ba7d3;
+  --color-secondary: #30da66;
   --color-secondary-shade-1: #a8eb12;
   --color-secondary-shade-2: #d3f589;
   --color-text-black: #333333;
@@ -27,9 +27,9 @@
   --fw-extrabold: 800;
   /* Font size sheets */
   --fs-s: 1.6rem;
-  --fs-m: 2rem;
-  --fs-l: 2.8rem;
-  --fs-xl: 3.8rem;
+  --fs-m: 2.1rem;
+  --fs-l: 3.6rem;
+  --fs-xl: 4.8rem;
   /* margins sheets */
   --mb-s: 1rem;
   --mb-m: 2rem;
@@ -44,6 +44,7 @@ html {
   font-size: 62.5%;
   font-family: "Red Hat Display", sans-serif;
   background-image: linear-gradient(22deg, #051937 0%, #004d7a 25%, #008793 50%, #00bf72 70%, #a8eb12 100%);
+  user-select: none;
 }
 
 body {
@@ -54,8 +55,8 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-::-webkit- .hover-bright:hover {
-  filter: brightness(110%);
+.hover-bright:hover {
+  filter: contrast(110%);
 }
 
 .hover-darker:hover {
