@@ -128,3 +128,9 @@
   color: var(--color-secondary);
   transition: inherit;
 }
+.submit-icon {
+  transition: inherit;
+}
+.expenseform__submit:hover .submit-icon {
+  transform: rotate(180deg);
+}

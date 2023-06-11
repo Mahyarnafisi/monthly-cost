@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/ExpenseItemDate.css";
+import "../../style/expenses/ExpenseItemDate.css";
 import { MdCalendarToday } from "react-icons/md";
 
 function ExpenseItemDate(props) {

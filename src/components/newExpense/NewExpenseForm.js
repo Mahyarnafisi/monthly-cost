@@ -28,7 +28,7 @@ function NewExpenseForm() {
       </div>
 
       <button className="expenseform__submit hover-bright">
-        <BsPlusLg />
+        <BsPlusLg className="submit-icon" />
       </button>
     </form>
   );

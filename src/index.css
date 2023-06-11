@@ -46,6 +46,34 @@ html {
   background-image: linear-gradient(22deg, #051937 0%, #004d7a 25%, #008793 50%, #00bf72 70%, #a8eb12 100%);
   user-select: none;
 }
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 75em) and (min-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 64em) and (min-width: 48em) {
+  html {
+    font-size: 43.7%;
+  }
+}
+
+@media screen and (max-width: 48em) and (min-width: 30em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+@media screen and (max-width: 30em) and (min-width: 20em) {
+  html {
+    font-size: 31.25%;
+  }
+}
 
 body {
   display: flex;
