@@ -4,7 +4,7 @@ import "../../style/newexpense/NewExpenseForm.css";
 import { BsPlusLg } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
 
-function NewExpenseForm() {
+function NewExpenseForm(props) {
   // store changes in States
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredNumber, setEnteredNumber] = useState("");
@@ -34,7 +34,9 @@ function NewExpenseForm() {
     setEnteredTitle("");
     setEnteredNumber("");
     setEnteredDate("");
-    console.log(enteredNewData);
+    props.onSaveExpenseData(enteredNewData);
+
+    // console.log(enteredNewData);
   };
 
   //

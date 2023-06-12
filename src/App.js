@@ -13,9 +13,16 @@ function App() {
     { id: 5, title: "Jeans and shoes", date: "29th November 2019", amount: 299 },
   ];
   //
+  const addExpensesHandler = (data) => {
+    const expenses = {
+      ...data,
+    };
+    console.log("from app js");
+    console.log(expenses);
+  };
   return (
     <div className="App">
-      <NewExpense />
+      <NewExpense onAddExpenses={addExpensesHandler} />
       <Expenses item={expense} />
     </div>
   );
