@@ -23,9 +23,20 @@ function NewExpenseForm() {
     setEnteredDate(event.target.value);
   };
 
+  const submitHandler = (event) => {
+    event.preventDefault();
+    const enteredNewData = {
+      id: (Math.random() * 100 + Math.random() * 100 + Math.random() * 6.631).toFixed(3),
+      title: enteredTitle,
+      amount: enteredNumber,
+      date: enteredDate,
+    };
+    console.log(enteredNewData);
+  };
+
   //
   return (
-    <form className="newexpenseform">
+    <form className="newexpenseform" onSubmit={submitHandler}>
       <div className="input--title hover-bright">
         <label htmlFor="inputTitle">
           Title <BsChevronRight className="label-icon" />
@@ -44,7 +55,7 @@ function NewExpenseForm() {
         <label htmlFor="inputDate">
           Date <BsChevronRight className="label-icon" />
         </label>
-        <input type="date" name="inputDate" required min="2019-01-01" max="2020-01-01" onChange={dateChangeHandler} />
+        <input type="date" name="inputDate" min="2019-01-01" max="2020-01-01" onChange={dateChangeHandler} />
       </div>
 
       <button className="expenseform__submit hover-bright" type="submit">
