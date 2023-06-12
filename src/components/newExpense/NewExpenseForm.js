@@ -47,7 +47,7 @@ function NewExpenseForm() {
         <input type="date" name="inputDate" required min="2019-01-01" max="2020-01-01" onChange={dateChangeHandler} />
       </div>
 
-      <button className="expenseform__submit hover-bright">
+      <button className="expenseform__submit hover-bright" type="submit">
         <BsPlusLg className="submit-icon" />
       </button>
     </form>
