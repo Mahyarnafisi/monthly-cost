@@ -13,7 +13,7 @@ function App() {
     { id: 4, title: "Groceries", date: "29th March 2021", amount: 389 },
     { id: 5, title: "Jeans and shoes", date: "29th November 2019", amount: 299 },
   ];
-  //
+  //climb up data from form expenses
   const addExpensesHandler = (data) => {
     const expenses = {
       ...data,
@@ -21,9 +21,16 @@ function App() {
     console.log("from app js");
     console.log(expenses);
   };
+
+  // climb up data from filter selected
+  const selectedYearFilter = (data) => {
+    console.log("select year from app js");
+    console.log(data);
+  };
+
   return (
     <div className="App">
-      <ExpenseFilter />
+      <ExpenseFilter onFilterChange={selectedYearFilter} />
       <NewExpense onAddExpenses={addExpensesHandler} />
       <Expenses item={expense} />
     </div>
