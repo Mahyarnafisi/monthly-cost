@@ -1,10 +1,12 @@
 .expenses {
   width: 100%;
-  height: 30rem;
+  height: 40rem;
   /* border: 1px solid red; */
   /* padding: 1rem; */
   /* border-radius: 2rem; */
   overflow-y: scroll;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 .expenses::-webkit-scrollbar {
   display: none;

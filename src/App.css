@@ -1,15 +1,17 @@
 .App {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: row;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: var(--color-text-white);
   padding: 2rem;
   width: 80vw;
   max-width: 130rem;
   min-width: 48rem;
   height: min-content;
-  max-height: 75rem;
+  /* max-height: 85rem; */
   border-radius: 2rem;
   box-shadow: 1rem 1rem 2rem #00000025, -1rem -1rem 2rem #ffffff30;
   filter: brightness(110%);

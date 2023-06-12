@@ -93,9 +93,9 @@
   flex: 1;
   padding: 2rem;
   background-color: var(--color-primary-shade-2);
+  display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-flow: wrap column;
   flex-flow: wrap column;
   border-radius: 1.5rem;
   transition: inherit;

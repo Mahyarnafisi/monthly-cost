@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Expenses from "./components/expenses/Expenses";
 import NewExpense from "./components/newExpense/NewExpense";
+import ExpenseFilter from "./components/expenses/ExpenseFilter";
 
 function App() {
   // Dummy data list
@@ -22,6 +23,7 @@ function App() {
   };
   return (
     <div className="App">
+      <ExpenseFilter />
       <NewExpense onAddExpenses={addExpensesHandler} />
       <Expenses item={expense} />
     </div>

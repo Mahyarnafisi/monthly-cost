@@ -38,7 +38,11 @@
   --mt-s: 1rem;
   --mt-m: 2rem;
   --mt-l: 4rem;
+
+  /* font family */
+--font: font-family: "Red Hat Display", sans-serif;
 }
+
 
 html {
   font-size: 62.5%;
