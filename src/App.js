@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Expenses from "./components/expenses/Expenses";
 import NewExpense from "./components/newExpense/NewExpense";
 import ExpenseFilter from "./components/expenses/ExpenseFilter";
 
 function App() {
+  // State section
+  const [filterYear, setFilterYear] = useState("2022");
   // Dummy data list
   const expense = [
     { id: 1, title: "car insurance", date: "24th April 2021", amount: 239 },
@@ -22,15 +24,12 @@ function App() {
     console.log(expenses);
   };
 
-  // climb up data from filter selected
-  const selectedYearFilter = (data) => {
-    console.log("select year from app js");
-    console.log(data);
-  };
+  // climb up data from filter selected and save it in state
+  const selectedYearFilter = (data) => setFilterYear(data);
 
   return (
     <div className="App">
-      <ExpenseFilter onFilterChange={selectedYearFilter} />
+      <ExpenseFilter defaultValue={filterYear} onFilterChange={selectedYearFilter} />
       <NewExpense onAddExpenses={addExpensesHandler} />
       <Expenses item={expense} />
     </div>
