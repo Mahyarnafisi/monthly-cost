@@ -3,7 +3,7 @@ import "../../style/expenses/ExpenseFilter.css";
 function ExpenseFilter() {
   return (
     <div className="expense-filter">
-      <div className="expense-filter__dropdown">
+      <div className="expense-filter__dropdown ">
         <p>Select a year:</p>
         <select name="" id="">
           <option value="2019">2019</option>

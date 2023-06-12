@@ -12,26 +12,33 @@
   width: 100%;
   border-radius: 1.5rem;
   background-color: var(--color-white);
-  border: 2px solid var(--color-secondary);
+  box-shadow: 0 0 1.5rem #00000025;
+  /* border: 2px solid var(--color-secondary); */
 }
 
 .expense-filter__dropdown p {
-  font-size: var(--fs-m);
-  font-weight: var(--fw-medium);
+  font-size: var(--fs-l);
+  font-weight: var(--fw-light);
   color: var(--color-primary);
 }
 .expense-filter__dropdown select {
-  font-size: var(--fs-m);
+  font-size: var(--fs-l);
   font-family: var(--font);
   width: 20%;
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 1rem;
   background-color: inherit;
   color: var(--color-primary);
   outline: none;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-light);
+  text-align: center;
+  border: none;
 }
 
 .expense-filter__dropdown option {
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-regular);
+}
+
+.expense-filter:hover select {
+  font-weight: var(--fw-regular);
 }

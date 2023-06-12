@@ -41,7 +41,7 @@
   border: none;
   background-color: var(--color-secondary);
   border-bottom: 1px solid;
-  font-size: var(--fs-m);
+  font-size: var(--fs-l);
   font-weight: var(--fw-light);
   color: var(--color-primary-shade-1);
   outline: none;
@@ -49,7 +49,7 @@
 
 .input--title input::placeholder {
   color: var(--color-primary-shade-1);
-  opacity: 30%;
+  opacity: 20%;
   font-weight: var(--fw-light);
 }
 /* ------------------------------- */
@@ -74,7 +74,7 @@
   border: none;
   background-color: var(--color-primary-shade-1);
   border-bottom: 1px solid;
-  font-size: var(--fs-m);
+  font-size: var(--fs-l);
   font-weight: var(--fw-light);
   color: var(--color-text-white);
   outline: none;
@@ -82,7 +82,7 @@
 
 .input--amount input::placeholder {
   color: var(--color-text-white);
-  opacity: 30%;
+  opacity: 20%;
   font-weight: var(--fw-light);
 }
 /* ---------------------------------- */
@@ -108,8 +108,8 @@
   background-color: var(--color-primary-shade-2);
   color: var(--color-primary);
   border-bottom: 1px solid;
-  font-size: var(--fs-m);
-  font-weight: var(--fw- regular);
+  font-size: var(--fs-l);
+  font-weight: var(--fw-light);
   outline: none;
   text-transform: uppercase;
   font-family: "Red Hat Display", sans-serif;
