@@ -13,7 +13,8 @@
   --color-primary-shade-2: #9ba7d3;
   --color-secondary: #30da66;
   --color-secondary-shade-1: #a8eb12;
-  --color-secondary-shade-2: #d3f589;
+  --color-tertiary:#004d7a;
+  --color-tertiary-shade-1:#42bfca45;
   --color-text-black: #333333;
   --color-text-white: #d3e0ff;
   --color-white: #ffffff;
@@ -29,7 +30,7 @@
   --fs-s: 1.6rem;
   --fs-m: 2.1rem;
   --fs-l: 3.2rem;
-  --fs-xl: 4.6rem;
+  --fs-xl: 4.8rem;
   /* margins sheets */
   --mb-s: 1rem;
   --mb-m: 2rem;

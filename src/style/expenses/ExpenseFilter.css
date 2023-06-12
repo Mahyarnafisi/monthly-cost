@@ -11,8 +11,7 @@
   padding: 1rem 1rem 1rem 2rem;
   width: 100%;
   border-radius: 1.5rem;
-  background-color: var(--color-white);
-  box-shadow: 0 0 1.5rem #00000025;
+  background-color: var(--color-tertiary-shade-1);
   /* border: 2px solid var(--color-secondary); */
 }
 
@@ -24,13 +23,13 @@
 .expense-filter__dropdown select {
   font-size: var(--fs-l);
   font-family: var(--font);
+  font-weight: var(--fw-light);
   width: 20%;
   /* padding: 1rem; */
   border-radius: 1rem;
-  background-color: inherit;
+  background-color: transparent;
   color: var(--color-primary);
   outline: none;
-  font-weight: var(--fw-light);
   text-align: center;
   border: none;
 }
