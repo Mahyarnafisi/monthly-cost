@@ -109,9 +109,10 @@
   color: var(--color-primary);
   border-bottom: 1px solid;
   font-size: var(--fs-m);
-  font-weight: var(--fw-light);
+  font-weight: var(--fw- regular);
   outline: none;
   text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .expenseform__submit {

@@ -31,6 +31,9 @@ function NewExpenseForm() {
       amount: enteredNumber,
       date: enteredDate,
     };
+    setEnteredTitle("");
+    setEnteredNumber("");
+    setEnteredDate("");
     console.log(enteredNewData);
   };
 
@@ -41,21 +44,21 @@ function NewExpenseForm() {
         <label htmlFor="inputTitle">
           Title <BsChevronRight className="label-icon" />
         </label>
-        <input type="text" name="inputTitle" required placeholder="Title" onChange={titleChangeHandler} />
+        <input type="text" name="inputTitle" required placeholder="Title" value={enteredTitle} onChange={titleChangeHandler} />
       </div>
 
       <div className="input--amount hover-bright">
         <label htmlFor="inputAmount">
           Amount <BsChevronRight className="label-icon" />
         </label>
-        <input type="number" name="inputAmount" required placeholder="Amount" onChange={numberChangeHandler} />
+        <input type="number" name="inputAmount" required placeholder="Amount" value={enteredNumber} onChange={numberChangeHandler} />
       </div>
 
       <div className="input--date hover-bright">
         <label htmlFor="inputDate">
           Date <BsChevronRight className="label-icon" />
         </label>
-        <input type="date" name="inputDate" min="2019-01-01" max="2020-01-01" onChange={dateChangeHandler} />
+        <input type="date" name="inputDate" min="2019-01-01" max="2020-01-01" value={enteredDate} onChange={dateChangeHandler} />
       </div>
 
       <button className="expenseform__submit hover-bright" type="submit">
