@@ -2,7 +2,7 @@
   width: 100%;
   padding: 2rem 2rem;
   display: grid;
-  grid-template-columns: 21rem 1fr min-content;
+  grid-template-columns: 15rem 1fr min-content;
   font-size: var(--fs-s);
   color: var(--color-text-black);
   font-weight: var(--fw-semibold);
