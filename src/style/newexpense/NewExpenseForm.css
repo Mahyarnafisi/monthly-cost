@@ -108,7 +108,7 @@
   background-color: var(--color-primary-shade-2);
   color: var(--color-primary);
   border-bottom: 1px solid;
-  font-size: var(--fs-l);
+  font-size: var(--fs-m);
   font-weight: var(--fw-light);
   outline: none;
   text-transform: uppercase;
