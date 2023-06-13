@@ -4,3 +4,42 @@
   grid-column: 2/3;
   grid-row: 2/3;
 }
+.newexpense__btn-add {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-secondary);
+  cursor: pointer;
+  position: relative;
+}
+.newexpense__btn-add:hover .btn-add {
+  transform: rotate(180deg);
+}
+.btn-add {
+  font-size: 6.4rem;
+  color: var(--color-secondary);
+  transition: all 0.2s ease-in-out;
+}
+.btn-massage {
+  padding: 2rem;
+  background-color: var(--color-text-black);
+  color: var(--color-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 75%);
+  border-radius: 0.5rem;
+  animation: fade 0.2s;
+}
+.btn-massage:after {
+  content: "";
+  display: flex;
+  top: 0%;
+  left: 50%;
+  background-color: var(--color-text-black);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(45deg);
+}

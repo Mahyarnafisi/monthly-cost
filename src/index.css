@@ -95,3 +95,15 @@ body {
 .hover-darker:hover {
   filter: brightness(90%);
 }
+
+@keyframes fade {
+  0%{
+opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+
+  }
+  
+}

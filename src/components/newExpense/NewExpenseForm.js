@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "../../style/newexpense/NewExpenseForm.css";
 import { BsPlusLg } from "react-icons/bs";
+import { GrClose } from "react-icons/gr";
 import { BsChevronRight } from "react-icons/bs";
 
 function NewExpenseForm(props) {
@@ -65,6 +66,9 @@ function NewExpenseForm(props) {
 
       <button className="expenseform__submit hover-bright" type="submit">
         <BsPlusLg className="submit-icon" />
+      </button>
+      <button type="button" onClick={props.closeEditing}>
+        <GrClose />
       </button>
     </form>
   );
