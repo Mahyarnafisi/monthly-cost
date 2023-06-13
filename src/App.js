@@ -6,12 +6,14 @@ import ExpenseFilter from "./components/expenses/ExpenseFilter";
 
 // Dummy data list
 const initiateExpense = [
-  { id: 1, title: "car insurance", date: "2021-02-19", amount: 239 },
-  { id: 2, title: "Books", date: "2020-06-11", amount: 199 },
-  { id: 3, title: "Saving", date: "2021-02-12", amount: 829 },
-  { id: 4, title: "Groceries", date: "2019-06-25", amount: 389 },
-  { id: 5, title: "Jeans and shoes", date: "2019-02-17", amount: 299 },
-  { id: 6, title: "Car wash", date: "2020-07-11", amount: 199 },
+  { id: 1, title: "car insurance", date: "2021-01-01", amount: 239 },
+  { id: 2, title: "Books", date: "2020-06-12", amount: 199 },
+  { id: 3, title: "Saving", date: "2021-02-13", amount: 829 },
+  { id: 4, title: "Groceries", date: "2020-09-28", amount: 389 },
+  { id: 5, title: "Jeans and shoes", date: "2020-12-31", amount: 299 },
+  { id: 6, title: "Car wash", date: "2020-10-12", amount: 199 },
+  { id: 7, title: "School", date: "2022-02-22", amount: 299 },
+  { id: 8, title: "Roof Cost", date: "2022-07-02", amount: 499 },
 ];
 function App() {
   const [expenses, setExpenses] = useState(initiateExpense);
@@ -33,7 +35,7 @@ function App() {
     <div className="App">
       <ExpenseFilter defaultValue={filterYear} onFilterChange={selectedYearFilter} />
       <NewExpense onAddExpenses={addExpensesHandler} />
-      <Expenses item={expenses} />
+      <Expenses item={expenses} filterYear={filterYear} />
     </div>
   );
 }

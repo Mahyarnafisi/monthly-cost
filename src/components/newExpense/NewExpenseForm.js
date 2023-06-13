@@ -60,7 +60,7 @@ function NewExpenseForm(props) {
         <label htmlFor="inputDate">
           Date <BsChevronRight className="label-icon" />
         </label>
-        <input type="date" name="inputDate" min="2019-01-01" max="2020-01-01" value={enteredDate} onChange={dateChangeHandler} />
+        <input type="date" name="inputDate" min="2019-01-01" max="2022-12-31" value={enteredDate} onChange={dateChangeHandler} />
       </div>
 
       <button className="expenseform__submit hover-bright" type="submit">

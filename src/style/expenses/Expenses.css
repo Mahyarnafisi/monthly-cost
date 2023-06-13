@@ -7,7 +7,17 @@
   overflow-y: scroll;
   grid-column: 1/2;
   grid-row: 2/3;
+  display: flex;
+
+  flex: 1;
+
+  flex-flow: column wrap;
 }
 .expenses::-webkit-scrollbar {
   display: none;
+}
+.expenses__not-found {
+  font-size: var(--fs-m);
+  font-weight: var(--fw-medium);
+  text-align: center;
 }
