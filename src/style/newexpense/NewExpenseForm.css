@@ -137,7 +137,7 @@
   border: none;
   outline: none;
   justify-content: center;
-  font-size: var(--fs-l);
+  font-size: var(--fs-xl);
   cursor: pointer;
   border: 2px solid var(--color-secondary);
   transition: inherit;
@@ -162,6 +162,6 @@
   border: 2px solid var(--color-primary-shade-2);
   color: var(--color-primary-shade-2);
   transition: inherit;
-  font-size: var(--fs-l);
+  font-size: var(--fs-xl);
   grid-column: 2/3;
 }

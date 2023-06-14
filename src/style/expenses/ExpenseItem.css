@@ -12,6 +12,7 @@
   background-color: var(--color-white);
   grid-gap: 1rem;
   box-shadow: 0.3rem 0.3rem 0.5rem #00000015;
+  animation: fade 1s;
 }
 .expense-item:not(:last-child) {
   margin-bottom: 1rem;
