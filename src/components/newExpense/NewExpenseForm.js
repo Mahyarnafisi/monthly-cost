@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "../../style/newexpense/NewExpenseForm.css";
 import { BsPlusLg } from "react-icons/bs";
-import { GrClose } from "react-icons/gr";
+import { BsXLg } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
 
 function NewExpenseForm(props) {
@@ -63,13 +63,14 @@ function NewExpenseForm(props) {
         </label>
         <input type="date" name="inputDate" min="2019-01-01" max="2022-12-31" value={enteredDate} onChange={dateChangeHandler} />
       </div>
-
-      <button className="expenseform__submit hover-bright" type="submit">
-        <BsPlusLg className="submit-icon" />
-      </button>
-      <button type="button" onClick={props.closeEditing}>
-        <GrClose />
-      </button>
+      <div className="expense-form__brn-group">
+        <button className="expenseform__submit hover-bright" type="submit">
+          <BsPlusLg className="submit-icon" />
+        </button>
+        <button type="button" className="expense-from__close-btn " onClick={props.closeEditing}>
+          <BsXLg className="submit-icon" />
+        </button>
+      </div>
     </form>
   );
 }

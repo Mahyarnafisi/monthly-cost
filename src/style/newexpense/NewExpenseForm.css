@@ -35,6 +35,7 @@
   flex-flow: wrap column;
   border-radius: 1.5rem;
   transition: inherit;
+  grid-column: 1/2;
 }
 .input--title input {
   width: 100%;
@@ -67,6 +68,8 @@
   flex-flow: wrap column;
   border-radius: 1.5rem;
   transition: inherit;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
 .input--amount input {
@@ -100,6 +103,8 @@
   flex-flow: wrap column;
   border-radius: 1.5rem;
   transition: inherit;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 .input--date input {
@@ -116,6 +121,14 @@
   font-family: "Red Hat Display", sans-serif;
 }
 
+/* ---------------------------------- */
+.expense-form__brn-group {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 1rem;
+}
+
 .expenseform__submit {
   flex: 1;
   display: flex;
@@ -124,15 +137,31 @@
   border: none;
   outline: none;
   justify-content: center;
-  font-size: 4.8rem;
+  font-size: var(--fs-l);
   cursor: pointer;
   border: 2px solid var(--color-secondary);
-  color: var(--color-secondary);
   transition: inherit;
+  grid-column: 1/2;
+  color: var(--color-secondary);
 }
 .submit-icon {
   transition: inherit;
 }
 .expenseform__submit:hover .submit-icon {
   transform: rotate(180deg);
+}
+.expense-from__close-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid var(--color-primary-shade-2);
+  color: var(--color-primary-shade-2);
+  transition: inherit;
+  font-size: var(--fs-l);
+  grid-column: 2/3;
 }

@@ -23,7 +23,7 @@
 }
 .btn-massage {
   padding: 2rem;
-  background-color: var(--color-text-black);
+  background-color: var(--color-primary-shade-1);
   color: var(--color-white);
   position: absolute;
   top: 50%;
@@ -31,13 +31,14 @@
   transform: translate(-50%, 75%);
   border-radius: 0.5rem;
   animation: fade 0.2s;
+  font-size: var(--fs-s);
 }
 .btn-massage:after {
   content: "";
   display: flex;
   top: 0%;
   left: 50%;
-  background-color: var(--color-text-black);
+  background-color: var(--color-primary-shade-1);
   width: 10px;
   height: 10px;
   position: absolute;
